@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: rgb(112, 109, 109);
+    /* width: 205px; */
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 2.1vw;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: large;
+    padding: 1.4vw 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.main{
+    /* background-color: orangered; */
+    margin-left: 205px;
+    width: 90vw;
+    padding: 23px;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.info{
+    /* background-color: blueviolet; */
+    height: 78vh;
+    width: 80vw;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  this will work when we do not alter the flex direction*/
+    flex-direction: column;
+    width: 45vw;
+}
+
+.androidPic img{
+    position: sticky;
+    margin-top: 11vh;
+    height: auto;
+    width: 35vw;
+}
+
+.hello{
+    font-size: 9vh;
+    font-family: 'Source Code Pro', cursive;
+    font-weight: 100;
+}
+.name{
+    font-size: 7vh;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+.about{
+    font-size: 3vh;
+    font-family: 'Source Code Pro', cursive;
+    font-weight: bold;
+}
+
+.moreabout{
+    font-size: 2.5vh;
+    font-family: 'Source Code Pro', cursive;
+    font-weight: bolder;
+}
+
+.buttons{
+    margin-top: 1vw;
+}
+.buttons button{
+    padding: 0.3vw;
+    border-radius: 1.5vw;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 2.4vh;
+    margin: 0vh 0.4vh;
+    cursor: pointer;
+}
+
+.buttons button:hover{    
+    background-color: white;
+    color: dodgerblue;
+}
+.btn{
+    padding: 0.2vw;
+    border-radius: 1.5vw;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 2.4vh;
+    margin: 0.5vh 0.4vh;
+    cursor: pointer;
+}
+
+.btn:hover{    
+    background-color: white;
+    color: dodgerblue;
+}
+
+.contactform {
+    padding: 0 2vw;
+    padding-top: 2vh;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.contactform h1{
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 100;
+}
+
+.contactform div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.emailHelp{
+    font-size: 10px;
+    color: midnightblue;
+}
+
+.form-control{
+    margin: 8px 0;
+    padding: 2px 1px;
+    width: 25vw;
+    height: 1.4vw;
+    border-radius: 5px;
+}
+
+.form-label{
+    font-weight: bolder;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+.form-check-input{
+    margin: 0.8vh;
+    width: 2vw;
+    cursor: pointer;
+}
+
+.form-check-label{
+    font-weight: 600;
+}
+
+.blogItem{
+    margin: 20px;
+    font-family: "Source Code Pro", sans-serif;
+}
+h1{
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 20px;
+}
+h2{
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 20px;
+}
+
+p{
+    margin: 20px;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.intro {
+    margin: -15px 12px;
+}
+
+.skillbox{
+    display: flex;
+    flex-direction: column;
+    margin: 18px;
+}
+
+.skill{
+    width: 200px;
+    height: 19px;
+    margin-bottom: 2px;
+    background-color: red;
+    border: 1.5px solid black;
+}
+
+.hundred{
+    width: 200px;
+    background-color: greenyellow;
+}
+.s5{
+    width: 150px;
+    background-color: red;
+}
+.fifty{
+    width: 100px;
+    background-color: blueviolet;
+}
+.t5{
+    width: 50px;
+    background-color: orange;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0);
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.menu{
+    width: 2vw;
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    margin-top: -3vh;
+}
+
+.cross{
+    margin-left: 7.5vw;
+    width: 2vw;
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    margin-top: -3vh;
+}
+
+@media (max-width: 828px){
+    .androidPic{
+        display: none;
+    }
+    .main{
+        margin-left: auto;
+    }
+}
